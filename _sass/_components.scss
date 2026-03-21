@@ -9,6 +9,8 @@
   padding: 2rem 2.5rem 1rem;
   margin-left: -2.5rem;
   margin-right: -2.5rem;
+  position: relative;
+  z-index: 1;
 
   html[data-theme="dark"] & {
     background: rgba(30, 30, 30, 0.65);
