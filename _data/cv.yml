@@ -23,66 +23,33 @@ cv:
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+      - institution: Courant, New York University
+        location: New York, NY
+        area: Computer Science
+        studyType: Master of Science
+        start_date: 2024-01-01
+        end_date: 2025-12-01
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Computer Vision, Geometric Processing, Computer Graphics (GPA: 3.9)"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: St John's College, University of Cambridge
+        location: Cambridge, UK
+        area: Computational and Information Engineering
+        studyType: Combined Bachelor and Master Program in Engineering
+        start_date: 2017-10-01
+        end_date: 2021-06-01
         highlights:
-          - Description 1.
-          - Description 2.
+          - "General Engineering in the 1st and 2nd Year: mechanical engineering, electrical and electronic engineering, materials and information engineering."
+          - "Information Engineering in the 3rd and 4th Year: control, information theory, reinforcement learning."
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: Wayve, Autonomous Driving
+        position: Software Engineering Summer Intern
+        location: London, UK
+        start_date: 2019-07-01
+        end_date: 2019-08-01
         highlights:
-          - Relativity
-          - Description 2.
-
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
-        highlights:
-          - Description 1.
-          - Description 2.
-
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
+          - "Built the fleet real-time monitoring system which can supervise the status of autonomous driving vehicles e.g. GPS information. The system played a vital role on data analysis of the fleet."
 
     Volunteer:
       - company: People's Climate March

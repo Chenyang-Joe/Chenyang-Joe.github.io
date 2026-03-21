@@ -5,8 +5,8 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
+        <span class="font-weight-bold">{{ site.first_name }} {{ site.middle_name }}
+        {{ site.last_name }}</span>
       {% else %}
         {{ site.title }}
       {% endif %}
@@ -32,8 +32,22 @@ layout: default
             cache_bust=true
           %}
         {% endif %}
+        <div style="margin-top: 0.2rem; font-size: 0.8rem; text-align: center; color: gray;">
+          Photo taken at ICCV 2025, Hawaii
+        </div>
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
+        {% endif %}
+        <div style="margin-top: 0.3rem; font-size: 0.9rem; text-align: center;">
+          Name in Chinese: 徐晨阳
+        </div>
+        <div style="margin-top: 0.2rem; font-size: 0.9rem; text-align: center;">
+          Email: cx2219 [at] nyu [dot] edu
+        </div>
+        {% if page.social %}
+          <div class="social" style="font-size: 0.85rem; margin-top: 0.5rem;">
+            <div class="contact-icons" style="font-size: 1.5rem;">{% social_links %}</div>
+          </div>
         {% endif %}
       </div>
     {% endif %}
@@ -56,22 +70,37 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
+    <!-- Education -->
+    <h2>Education</h2>
+    <div style="margin-bottom: 0.5rem;">
+      <strong>New York University</strong> · M.S. Computer Science
+    </div>
+    <div style="margin-bottom: 1rem;">
+      <strong>University of Cambridge</strong> · Integrated Bachelor's and Master's in Engineering
+    </div>
+
+    <!-- Experience -->
+    <h2>Experience</h2>
+    <div style="margin-bottom: 1rem;">
+      <strong>Wayve</strong> · Software Engineering Intern · 2019
+    </div>
+
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
 
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% social_links %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
+    <!-- Leisure -->
+    <h2>Leisure</h2>
+    <div style="margin-bottom: 0.5rem;">
+      <strong>Computer Graphics Fun Demos</strong> · Interactive graphics projects built during coursework. <a href="/graphics-demos/" style="font-size: 0.8rem; color: var(--global-theme-color);">[play]</a>
+    </div>
+    <div style="margin-bottom: 1rem;">
+      <strong>Twelve Terrestrial Branches</strong> · A Unity act-RPG game made at Booom Game Jam 2021. <a href="https://www.gcores.com/games/67517" target="_blank" style="font-size: 0.8rem; color: var(--global-theme-color);">[view]</a>
+    </div>
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
