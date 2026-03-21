@@ -45,7 +45,7 @@ if (canvas) {
   function animate() {
     requestAnimationFrame(animate);
     if (pivot) {
-      pivot.rotation.y += 0.0006;
+      pivot.rotation.y += 0.0003;
     }
     renderer.render(scene, camera);
   }
