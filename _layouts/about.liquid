@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<canvas id="bunny-bg" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none;"></canvas>
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">
@@ -11,7 +12,7 @@ layout: default
         {{ site.title }}
       {% endif %}
     </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+    <p class="desc" style="margin-bottom: 1.5rem;">{{ page.subtitle }}</p>
   </header>
 
   <article>
@@ -71,35 +72,43 @@ layout: default
     {% endif %}
 
     <!-- Education -->
-    <h2>Education</h2>
-    <div style="margin-bottom: 0.5rem;">
-      <strong>New York University</strong> · M.S. Computer Science
-    </div>
-    <div style="margin-bottom: 1rem;">
-      <strong>University of Cambridge</strong> · Integrated Bachelor's and Master's in Engineering
+    <div class="section-card" style="margin-top: 2rem;">
+      <h2>Education</h2>
+      <div style="margin-bottom: 0.5rem;">
+        <strong>New York University</strong> · M.S. Computer Science
+      </div>
+      <div>
+        <strong>University of Cambridge</strong> · Integrated Bachelor's and Master's in Engineering
+      </div>
     </div>
 
     <!-- Experience -->
-    <h2>Experience</h2>
-    <div style="margin-bottom: 1rem;">
-      <strong>Wayve</strong> · Software Engineering Intern · 2019
+    <div class="section-card">
+      <h2>Experience</h2>
+      <div>
+        <strong>Wayve</strong> · Software Engineering Intern · 2019
+      </div>
     </div>
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
+      <div class="section-card">
+        <h2>
+          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Publications</a>
+        </h2>
+        {% include selected_papers.liquid %}
+      </div>
     {% endif %}
 
     <!-- Leisure -->
-    <h2>Leisure</h2>
-    <div style="margin-bottom: 0.5rem;">
-      <strong>Computer Graphics Fun Demos</strong> · Interactive graphics projects built during coursework. <a href="/graphics-demos/" style="font-size: 0.8rem; color: var(--global-theme-color);">[play]</a>
-    </div>
-    <div style="margin-bottom: 1rem;">
-      <strong>Twelve Terrestrial Branches</strong> · A Unity act-RPG game made at Booom Game Jam 2021. <a href="https://www.gcores.com/games/67517" target="_blank" style="font-size: 0.8rem; color: var(--global-theme-color);">[view]</a>
+    <div class="section-card">
+      <h2>Leisure</h2>
+      <div style="margin-bottom: 0.5rem;">
+        <strong>Computer Graphics Fun Demos</strong> · Interactive graphics projects. <a href="/graphics-demos/" style="font-size: 0.8rem; color: var(--global-theme-color);">[play]</a>
+      </div>
+      <div>
+        <strong>Twelve Terrestrial Branches</strong> · A Unity act-RPG game made at Booom Game Jam 2021. <a href="https://www.gcores.com/games/67517" target="_blank" style="font-size: 0.8rem; color: var(--global-theme-color);">[view]</a>
+      </div>
     </div>
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
@@ -107,3 +116,12 @@ layout: default
     {% endif %}
   </article>
 </div>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module" src="{{ '/assets/js/bunny-bg.js' | relative_url }}"></script>

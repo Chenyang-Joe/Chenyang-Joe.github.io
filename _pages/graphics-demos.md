@@ -16,4 +16,6 @@ Please play with these demos!
 - [Sonic vs Rock 2](https://cims.nyu.edu/~cx2219/graphics/hw7/)
 - [Cats](https://cims.nyu.edu/~cx2219/graphics/hw5/)
 
+*Thanks to Professor Ken Perlin for providing the framework.*
+
 <a href="/" style="margin-top: 2rem; display: inline-block;">&larr; Back to Home</a>

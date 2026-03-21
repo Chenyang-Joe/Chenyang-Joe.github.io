@@ -27,6 +27,6 @@ latest_posts:
   limit:  # leave blank to include all the blog posts
 ---
 
-I am a recent master's graduate and currently a research assistant at [AI4CE Lab](https://ai4ce.github.io/) and [Geometric Computing Lab](https://cims.nyu.edu/gcl/) at New York University. My research interests lie at the intersection of computer vision and computer graphics. Currently, my work explores how generative AI can advance mesh animation creation. Ultimately, I am driven by the vision of translating advances in computer vision and graphics into experiences that enrich and delight people's lives.
+I am a recent master's graduate and currently a research assistant at AI4CE Lab and Geometric Computing Lab at New York University. My research interests lie at the intersection of computer vision and computer graphics. Currently, my work explores how generative AI can advance mesh animation creation. Ultimately, I am driven by the vision of translating advances in computer vision and graphics into experiences that enrich and delight people's lives.
 
 I am actively seeking PhD positions starting in 2026/2027, as well as job and visiting research opportunities beginning in Summer 2026. Feel free to reach out via email — I actively reply!
