@@ -19,11 +19,11 @@ if (canvas) {
   let currentRotY = 0;
 
   const loader = new OBJLoader();
-  loader.load('/assets/models/bunny_0_1.obj', function (obj) {
+  loader.load('/assets/models/bunny_0_3.obj', function (obj) {
     obj.traverse(function (child) {
       if (child.isMesh) {
         child.material = new THREE.MeshBasicMaterial({
-          color: 0x888888,
+          color: 0x00A1D6,
           wireframe: true,
           transparent: true,
           opacity: 0.15,

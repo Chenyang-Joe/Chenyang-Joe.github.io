@@ -2,6 +2,19 @@
  * Reusable component styles: Cards, captions, profiles, etc.
  ******************************************************************************/
 
+// Post content background (sits over bunny canvas)
+.post {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  padding: 2rem 2.5rem 1rem;
+  margin-left: -2.5rem;
+  margin-right: -2.5rem;
+
+  html[data-theme="dark"] & {
+    background: rgba(30, 30, 30, 0.65);
+  }
+}
+
 // Section cards
 .section-card {
   background: var(--global-card-bg-color);
