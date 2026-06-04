@@ -6,8 +6,9 @@
   author      = {Xu, Chenyang and Li, Haoran and Jiang, Zeyu and He, Guangzhao and Zhang, Shichen and Zhang, Juexiao and Li‡, Sihang and Feng‡, Chen and Zhang‡, Jing},
   year        = {2026},
   abbr        = {In Submission},
-  abstract    = {Animating static meshes into realistic motion conditioned on text prompts remains a fundamental yet challenging problem. We propose a semantic-aware and scalable framework for text-driven mesh motion generation. We introduce AniMuse Gaussian Nodes, a novel rigging representation that unifies geometric control with semantic information. The framework requires no manual labelling, making it naturally scalable. A large-scale animal mesh motion dataset is curated to demonstrate scalability.},
+  abstract    = {We introduce AniMuse, a two-stage framework for text-driven animal mesh animation directly from raw meshes, without predefined skeletons, joint names, or manual rigging. At its core are <em>Semantic Gaussian Bones</em> (SGBs), a compact skeleton-free deformation representation decoded from a globally shared learnable query book and trained through explicit linear blend skinning with topology-aware mask-gated weights. The shared query book yields stable cross-instance bone slots, providing a mesh-native control space for text-conditioned generation and SGB-slot motion inpainting. A DiT-based diffusion model generates per-bone SE(3) trajectories from text and geometric bone latents, while allowing users to clamp selected SGB slots and inpaint the remaining full-body motion. On DeformingThings4D, our rig reduces bidirectional CD-L1 by 39% over the best neural skeleton baseline, and a forward-only variant achieves the lowest CD-L2 overall. On the out-of-domain AnimalML3D benchmark, AniMuse improves overall motion quality over skeleton-based and vertex-based baselines.},
   website     = {https://chenyang-joe.github.io/AniMusePage/},
+  preview     = {natm.jpg},
   annotation  = {‡ Corresponding authors},
   selected    = {true}
 }
