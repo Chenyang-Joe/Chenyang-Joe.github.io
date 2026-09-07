@@ -54,8 +54,15 @@
       {% assign author_array_size = entry.author_array | size %}
 
       {% assign author_array_limit = author_array_size %}
-      {% if site.max_author_limit and author_array_size > site.max_author_limit %}
-        {% assign author_array_limit = site.max_author_limit %}
+      {% comment %}Per-entry author_limit overrides site.max_author_limit; 0 means always show every author.{% endcomment %}
+      {% assign author_limit_value = site.max_author_limit %}
+      {% if entry.author_limit %}
+        {% assign author_limit_value = entry.author_limit | plus: 0 %}
+      {% endif %}
+      {% if author_limit_value %}
+        {% if author_limit_value > 0 and author_array_size > author_limit_value %}
+          {% assign author_array_limit = author_limit_value %}
+        {% endif %}
       {% endif %}
 
       {%- for author in entry.author_array limit: author_array_limit -%}
