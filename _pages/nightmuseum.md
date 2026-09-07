@@ -5,6 +5,6 @@ permalink: /nightmuseum/
 nav: false
 ---
 
-# Night at the Museum: A Scalable Framework for Text-Driven Mesh Motion Generation
+# Night at the Museum: Text-Driven Motion Generation via Semantic Gaussian Bones
 
 Coming soon.

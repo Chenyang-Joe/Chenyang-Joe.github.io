@@ -2,14 +2,14 @@
 ---
 
 @article{xu2026nightmuseum,
-  title       = {Night at the Museum: A Scalable Framework for Text-Driven Mesh Motion Generation},
-  author      = {Xu, Chenyang and Li, Haoran and Jiang, Zeyu and He, Guangzhao and Zhang, Shichen and Zhang, Juexiao and Li‡, Sihang and Feng‡, Chen and Zhang‡, Jing},
+  title       = {Night at the Museum: Text-Driven Motion Generation via Semantic Gaussian Bones},
+  author      = {Xu, Chenyang and Jiang*, Zeyu and Li*, Haoran and Zhang*, Shichen and Zhang, Juexiao and He†, Guangzhao and Li†, Sihang and Feng†, Chen and Zhang†, Jing},
   year        = {2026},
-  abbr        = {In Submission},
-  abstract    = {We introduce AniMuse, a two-stage framework for text-driven animal mesh animation directly from raw meshes, without predefined skeletons, joint names, or manual rigging. At its core are <em>Semantic Gaussian Bones</em> (SGBs), a compact skeleton-free deformation representation decoded from a globally shared learnable query book and trained through explicit linear blend skinning with topology-aware mask-gated weights. The shared query book yields stable cross-instance bone slots, providing a mesh-native control space for text-conditioned generation and SGB-slot motion inpainting. A DiT-based diffusion model generates per-bone SE(3) trajectories from text and geometric bone latents, while allowing users to clamp selected SGB slots and inpaint the remaining full-body motion. On DeformingThings4D, our rig reduces bidirectional CD-L1 by 39% over the best neural skeleton baseline, and a forward-only variant achieves the lowest CD-L2 overall. On the out-of-domain AnimalML3D benchmark, AniMuse improves overall motion quality over skeleton-based and vertex-based baselines.},
+  abbr        = {Coming Soon},
+  abstract    = {We introduce AniMuse, a two-stage framework for text-driven animal mesh animation directly from raw meshes, without predefined skeletons, joint names, or manual rigging. At its core are <em>Semantic Gaussian Bones</em> (SGBs), a compact skeleton-free deformation representation decoded from a globally shared learnable query book and trained through explicit linear blend skinning with topology-aware mask-gated weights. The shared query book yields stable cross-instance bone slots, providing a mesh-native control space for text-conditioned generation and SGB-slot motion inpainting. A diffusion model generates per-bone trajectories from text and geometric bone latents, while allowing users to clamp selected SGB slots and inpaint the remaining full-body motion. On DeformingThings4D, our rig reduces bidirectional CD-L1 by 39% over the best neural skeleton baseline, and a forward-only variant achieves the lowest CD-L2 overall. In a 50-participant user study on the out-of-domain AnimalML3D benchmark, participants preferred AniMuse over the strongest skeleton-free baseline 74.6% of the time overall, and 84.0% on whether the motion matched the prompt.},
   website     = {https://chenyang-joe.github.io/AniMusePage/},
   preview     = {natm.jpg},
-  annotation  = {‡ Corresponding authors},
+  annotation  = {* Equal contribution<br>† Corresponding authors},
   selected    = {true}
 }
 
@@ -17,7 +17,7 @@
   title       = {CRAG: Can 3D Generative Models Help 3D Assembly?},
   author      = {Jiang*, Zeyu and Li*, Sihang and Tan†, Siqi and Xu†, Chenyang and Zhang, Juexiao and Galway-Witham, Julia and Wang, Xue and Williams, Scott A and Iovita, Radu and Feng‡, Chen and Zhang‡, Jing},
   year        = {2026},
-  abbr        = {Under Review},
+  abbr        = {ICML 2026},
   abstract    = {We reformulate 3D assembly as a joint problem combining assembly and generation. These two processes are mutually reinforcing: assembly provides part-level structural priors for generation, while generation injects holistic shape context that resolves ambiguities in assembly. We design a physically based simulation pipeline to model the fossilization process of bones and implement FractureBEM for modeling brittle fracture behavior.},
   arxiv       = {2602.22629},
   preview     = {crag.jpg},
